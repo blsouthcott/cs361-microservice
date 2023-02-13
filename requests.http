@@ -1,0 +1,89 @@
+###
+POST http://localhost:5000/totalTime HTTP/1.1
+content-type: application/json
+
+{
+   "intersections": [
+     {
+       "ramps": [
+         {
+           "style": "PERPENDICULAR",
+           "inspectionType": "FULL"
+         },
+         {
+           "style": "UNIQUE",
+           "inspectionType": "FULL"
+         }
+       ]
+     },
+     {
+       "ramps": [
+         {
+           "style": "PARALLEL",
+           "inspectionType": "FULL"
+         },
+         {
+           "style": "COMBINATION",
+           "inspectionType": "FULL"
+         }
+       ]
+     },
+     {
+       "ramps": [
+         {
+           "style": "PARALLEL",
+           "inspectionType": "GO_BACK"
+         },
+         {
+           "style": "UNIQUE",
+           "inspectionType": "GO_BACK"
+         }
+       ]
+     }
+   ]
+}
+
+###
+POST http://localhost:5000/totalTime HTTP/1.1
+content-type: application/json
+
+{
+    "intersections": [
+        {
+            "ramps": [
+                {
+                    "style": "Perpendicular",
+                    "inspectionType": "Full"
+                },
+                {
+                    "style": "Parallel",
+                    "inspectionType": "Full"
+                },
+                {
+                    "corner": "2",
+                    "ramp": "1",
+                    "style": "Combination",
+                    "inspectionType": "Full"
+                },
+                {
+                    "corner": "2",
+                    "ramp": "2",
+                    "style": "Unique",
+                    "inspectionType": "Full"
+                },
+                {
+                    "corner": "3",
+                    "ramp": "1",
+                    "style": "Parallel",
+                    "inspectionType": "Full"
+                },
+                {
+                    "corner": "3",
+                    "ramp": "2",
+                    "style": "Perpendicular",
+                    "inspectionType": "Full"
+                }
+            ]
+        }
+    ]
+}
