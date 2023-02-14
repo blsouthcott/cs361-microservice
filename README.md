@@ -97,6 +97,15 @@ The `totalTime` field is an integer indicating the estimated time in minutes.
 
 In the example call above, the `totalTime` field holds 109.
 
+### Example of receiving data
+```
+// resp holds response from microservice
+respData = await resp.json()
+console.log("total estimated time: ", respData.totalTime)
+
+// console output: total estimated time: 109
+```
+
 ## UML Diagram
 <img width="483" alt="image" src="https://user-images.githubusercontent.com/64614884/218633376-87b531c7-1636-4805-a4de-1a36aabd253d.png">
 
