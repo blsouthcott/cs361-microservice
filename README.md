@@ -1,6 +1,8 @@
 # cs344-microservice
 ## How to request data
-The microservice accepts HTTP POST requests. The body of the reqest must be JSON in the following basic structure:
+The microservice accepts HTTP POST requests to the `/totalTime` endpoint. Running the service locally, the URL will be `http://localhost:5000/totalTime`
+
+The body of the reqest must be JSON in the following basic structure:
 ```
 {
   "intersections": [
