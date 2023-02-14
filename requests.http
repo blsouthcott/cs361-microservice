@@ -87,3 +87,57 @@ content-type: application/json
         }
     ]
 }
+
+
+###
+POST http://localhost:5000/totalTime HTTP/1.1
+content-type: application/json
+
+{
+    "intersections": [
+        {
+            "ramps": "x"
+        }
+    ]
+}
+
+###
+POST http://localhost:5000/totalTime HTTP/1.1
+content-type: application/json
+
+{
+    "intersections": "x"
+}
+
+###
+POST http://localhost:5000/totalTime HTTP/1.1
+content-type: application/json
+
+{
+   "intersections": [
+     {
+       "ramps": [
+         {
+           "style": "PERPENDICULAR",
+           "inspectionType": "GO_BACK"
+         },
+         {
+           "style": "UNIQUE",
+           "inspectionType": "FULL"
+         }
+       ]
+     },
+     {
+       "ramps": [
+         {
+           "style": "PARALLEL",
+           "inspectionType": "FULL"
+         },
+         {
+           "style": "COMBINATION",
+           "inspectionType": "FULL"
+         }
+       ]
+     }
+   ]
+}
