@@ -22,14 +22,14 @@ Each object in the `intersections` array must include a `ramps` field, which is 
 
 Each object in the `ramps` field must include `style` and `inspectionType` fields, which are strings.
 
-The following strings are accepted for the `style` field:
+The following strings are accepted for the `style` field and are case-insensitive:
 - COMBINATION
 - PERPENDICULAR
 - PARALLEL
 - UNIQUE
 - CUT_THROUGH
 
-The following strings are accepted for the `inspectionType` field:
+The following strings are accepted for the `inspectionType` field and are case-insensitive:
 - FULL
 - GO_BACK
 
