@@ -1,4 +1,4 @@
-# cs344-microservice
+# cs361-microservice
 ## How to request data
 The microservice accepts HTTP POST requests to the `/totalTime` endpoint. Running the service locally, the URL will be `http://localhost:5000/totalTime`
 
