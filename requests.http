@@ -118,8 +118,8 @@ content-type: application/json
      {
        "ramps": [
          {
-           "style": "PERPENDICULAR",
-           "inspectionType": "GO_BACK"
+           "style": "UNIQUE",
+           "inspectionType": "FULL"
          },
          {
            "style": "UNIQUE",

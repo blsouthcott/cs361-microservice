@@ -1,6 +1,8 @@
 
+import logging
 from flask import Flask, request, jsonify
 
+logging.basicConfig(level=logging.INFO)
 app = Flask(__name__)
 
 
@@ -18,7 +20,8 @@ times = {
 def total_time():
     time = 0
     body = request.get_json()
-    print(body)
+    logging.info("received request body: ")
+    logging.info(body)
     if not (intersections := body.get("intersections")):
         return "intersections is a required field", 404
     if type(intersections) is not list:
